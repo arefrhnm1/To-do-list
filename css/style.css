@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  height: 100%;
+  background-color: #7469B6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .content {
+  width: 50vw;
+  background-color: #AD88C6;
+  border-radius: 25px;
+  padding: 40px;
+  display: flex;
+}
+
+/****** ITEMS ******/
+main .content .items_wrapper {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/****** SEARCH BOX ******/
+main .content .items_wrapper .search_box {
+  width: 80%;
+  height: 45px;
+  margin-bottom: 40px;
+  background-color: #FFE6E6;
+  border-radius: 10px;
+  display: flex;
+  border: 2px solid #908c8c;
+  padding: 0 10px;
+}
+
+main .content .items_wrapper .search_box input {
+  width: 90%;
+  background-color: transparent;
+  border: none;
+  color: #565353;
+  font-size: 18px;
+}
+
+main .content .items_wrapper .search_box input:focus-visible {
+  outline: none;
+}
+
+main .content .items_wrapper .search_box button {
+  width: 10%;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  color: #565353;
+  cursor: pointer;
+}
+
+/****** LIST OF ITEMS ******/
+main .content .items_wrapper .list_items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  height: 35vh;
+  direction: rtl;
+}
+
+main .content .items_wrapper .list_items .items {
+  width: 90%;
+  height: 30px;
+  background-color: #7469B6;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  direction: ltr;
+}
+
+main .content .items_wrapper .list_items .items span {
+  font-size: 19px;
+  color: #fff;
+}
+
+main .content .items_wrapper .list_items .items input {
+  font-size: 19px;
+}
+
+main .content .items_wrapper .list_items .items .items_icons {
+  text-decoration: none;
+  color: #bbb;
+}
+
+main .content .items_wrapper .list_items .items .items_icons i {
+  font-size: 18px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+main .content .items_wrapper .list_items .items .items_icons i:hover {
+  color: #fff;
+}
+
+/****** ADD NEW ITEMS ******/
+main .content .add_new_item {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .content .add_new_item h2 {
+  font-size: 27px;
+  color: #4f4e4e;
+  margin: 20px;
+}
+
+main .content .add_new_item .add_item_box {
+  width: 95%;
+  height: 40px;
+  background-color: #FFE6E6;
+  display: flex;
+  border: 2px solid #908c8c;
+  border-radius: 10px;
+}
+
+main .content .add_new_item .add_item_box input {
+  width: 70%;
+  background-color: transparent;
+  border: none;
+  color: #565353;
+  padding: 6px 10px;
+  font-size: 16px;
+}
+
+main .content .add_new_item .add_item_box input:focus-visible {
+  outline: none;
+}
+
+main .content .add_new_item .add_item_box button {
+  width: 30%;
+  background-color: #4f4e4e;
+  border: none;
+  padding: 6px 10px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

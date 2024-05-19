@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title> To Do List </title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="content">
+
+            <!-- ITEMS -->
+            <div class="items_wrapper">
+                
+                <!-- SEARCH BOX -->
+                <form class="search_box">
+                    <input type="text" placeholder="Search Title..">
+                    <button type="submit" onclick="search(event)">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+
+                <!-- LIST OF ITEMS -->
+                <ul class="list_items"></ul>
+            </div>
+
+            <!-- ADD NEW ITEMS -->
+            <div class="add_new_item">
+                <h2> Create a new item: </h2>
+
+                <form class="add_item_box">
+                    <input type="text" placeholder="New item..">
+                    <button type="submit" onclick="add(event)"> Add </button>
+                </form>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
